@@ -1,0 +1,33 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				.service
+					.service__title Мы запускаем новую услугу Фрегат Сервис!#[br] Починим, настроим, восстановим!
+					.service__wrapp
+						.service__item
+							.service__icon-item
+								img(src="images/icons/serv1.svg" alt="")
+							.service__text-item Фрегат Сервис предоставляет полный спектр услуг по ремонту и настройке компьютерной техники на дому, от компонентного и блочного ремонта до восстановления данных.
+						.service__item
+							.service__icon-item
+								img(src="images/icons/serv2.svg" alt="")
+							.service__text-item
+								p Обращайтесь по телефонам: (056) 732-00-90,(067) 732-00-90
+								p — График работы входящей линии с 9:00 до 18:00. Понедельник-пятница.
+								p — График выездных работ с 9:00 до 19:00. Понедельник-суббота.
+						.service__item
+							.service__icon-item
+								img(src="images/icons/serv3.svg" alt="")
+							.service__text-item Честные цены, профессиональный подход, кратчайшие сроки. Наши мастера всегда помогут, подскажут и починят.
+					.service__info Ознакомиться со стоимостью услуг можно по ссылке #[a(href="#") Фрегат Сервис]
+		include pug/components/footer
+		include pug/components/popup

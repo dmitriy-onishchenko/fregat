@@ -1,0 +1,26 @@
+// stylelint-disable no-empty-source
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap&subset=cyrillic');
+
+@font-face {
+  font-family: 'AvenirNextCyrRegular';
+  src:  url('../fonts/AvenirNextCyrRegular.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyrRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyrRegular';
+  src:  url('../fonts/AvenirNextCyrMedium.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyrMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyrRegular';
+  src:  url('../fonts/AvenirNextCyrBold.woff2') format('woff2'),
+        url('../fonts/AvenirNextCyrBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

@@ -1,0 +1,40 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				h1.page__title Новости
+				.news
+					.news__item
+						a.news__img(href="#" style="background-image: url(images/news/image.jpg)")
+						.news__descr
+							.news__title ИЗМЕНЕНИЕ СТОИМОСТИ УСЛУГ ФРЕГАТ ТВ
+							.news__text Уважаемый абонент, с 1 января 2019 года произошли значительные изменения в тарифах ретрансляции телеканалов медиагрупп в сетях провайдеров.#[br] Мы вынуждены поднять тарифы на предоставляемый сервис, но вместе с поднятием также увеличиваем наполняемость каждого из пакетов, чтобы услуга соответствовала вашим ожиданиям.
+							.news__bottom
+								.news__left-bottom
+									.news__autor Admin
+									.news__delimiter-bottom |
+									.news__date 24.04.2019
+								.news__right-bottom
+									a.news__button(href="#") Подробнее
+					.news__item
+						a.news__img(href="#" style="background-image: url(images/news/image.jpg)")
+						.news__descr
+							.news__title ИЗМЕНЕНИЕ СТОИМОСТИ УСЛУГ ФРЕГАТ ТВ
+							.news__text Уважаемый абонент, с 1 января 2019 года произошли значительные изменения в тарифах ретрансляции телеканалов медиагрупп в сетях провайдеров.#[br] Мы вынуждены поднять тарифы на предоставляемый сервис, но вместе с поднятием также увеличиваем наполняемость каждого из пакетов, чтобы услуга соответствовала вашим ожиданиям.
+							.news__bottom
+								.news__left-bottom
+									.news__autor Admin
+									.news__delimiter-bottom |
+									.news__date 24.04.2019
+								.news__right-bottom
+									a.news__button(href="#") Подробнее
+		include pug/components/footer
+		include pug/components/popup

@@ -1,0 +1,44 @@
+footer.footer
+	.footer__top
+		.container.footer__container
+			.footer__item-top
+				a.footer__logo(href="#")
+					img(src="images/logo.svg" alt="")
+			.footer__item-top
+				.footer__title-item Каталог
+				ul.footer__list-item
+					li
+						a(href="#") Интернет и WiFi
+					li
+						a(href="#") Безопасность и видеонаблюдение
+					li
+						a(href="#") Обслуживание компьютерной техники
+					li
+						a(href="#") It аутсорсинг
+			.footer__item-top
+				.footer__title-item Режим работы
+				.header__work
+					.header__icon-work.svg-icon
+						+svg('time')
+					.header__text-work 24/7/365
+			.footer__item-top
+				.footer__title-item Контакты
+				.header__phone
+					.dropdown-phone
+						.dropdown-phone__active (056) 732-00-90
+						.dropdown-phone__hidden.is-hidden
+							button.dropdown-phone__number(type="button") (056) 732-00-90
+							button.dropdown-phone__number(type="button") Номер 2
+							button.dropdown-phone__number(type="button") Номер 3
+	.footer__bottom
+		.container.footer__container
+			.footer__left-bottom
+				.copyright © All rights reserved.
+				.develop Developed: #[a(href="#" target="_blank") Union-Studio]
+			.footer__right-bottom
+				a.footer__button.footer__button--facebook(href="#")
+					+svg('facebook')
+				a.footer__button.footer__button--twitter(href="#")
+					+svg('twitter')
+				a.footer__button.footer__button--search(href="#")
+					+svg('search')

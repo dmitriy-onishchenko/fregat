@@ -1,0 +1,23 @@
+.product-card__mini-block
+	.product-card__mini-img
+		img(src="https://via.placeholder.com/345x345" alt="")
+	.product-card__mini-descr
+		.product-card__code Код товара: #[span 30810]
+		.product-name TP-LINK TL-WR840N
+.product-card__count-block
+	.product-status
+		.product-status__title
+			.product-status__top-title Количество:
+			.product-status__bottom-title Нет на складе
+		.product-count
+			button.product-count__btn.product-count__btn--down(type="button") -
+			input.product-count__field(type="text" value="1")
+			button.product-count__btn.product-count__btn--up(type="button") +
+		.product-status__equally =
+		.product-status__info
+			.product-status__name-info Оптовая цена
+			.product-status__value
+				.product-status__price-value 5948
+				.product-status__price-currency &#8381
+	.product-card__button
+		a.button.button--red.product-card__item-button(href="#") Добавить в корзину

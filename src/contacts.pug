@@ -1,0 +1,53 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				.contacts
+					.contacts__info
+						.contacts__title-info Как вступить в контакт с Фрегатом?
+						.contacts__text-info Каждому своему клиенту провайдер Фрегат всегда готов оказать любую помощь или ответить на все вопросы в любое подходящее для вас время. Для этого вам всего лишь нужно#[br] узнать на сайте Фрегат контакты, по которым вы можете связаться с нашими сотрудниками.#[br] Есть несколько доступных способов:
+					.contacts__tab
+						.contacts__list-tab
+							button.contacts__item-tab.is-active(type="button" data-tab="#tab1") Общение с оператором
+							button.contacts__item-tab(type="button" data-tab="#tab2") Многоканальный IVR
+							button.contacts__item-tab(type="button" data-tab="#tab3") Email
+							button.contacts__item-tab(type="button" data-tab="#tab4") Факс
+						.contacts__line-tab
+					.contacts__pane
+						.contacts__item-pane#tab1
+							p Вы можете связаться с нашим сотрудником и лично узнать у него всю необходимую информацию круглосуточно по нашим многоканальным телефонам:#[br] (056) 734-44-44; (098) 734-44-44; (099) 734-44-44
+						.contacts__item-pane.is-hidden#tab2
+							p С его помощью вы сможете позвонить на номер телефона провайдера Фрегат и узнать все, что вас интересует, без прямого соединения с оператором. Вам нужно лишь выбрать необходимое голосовое меню:
+							p Фрегат ТВ (голосовое меню 0): круглосуточно, без выходных.
+							p Служба техподдержки (голосовое меню 1): круглосуточно, без выходных.
+							p Центр подключений (голосовое меню 2): с 9-00 до 21-00, без выходных.
+							p Услуги и тарифы (голосовое меню 3): круглосуточно, без выходных.
+							p Фрегат Сервис (голосовое меню 4): Контакт Центр с 9-00 до 18-00, с понедельника по пятницу. Только по городу Днепр.
+						.contacts__item-pane.is-hidden#tab3
+							p Вы можете отправить нам письмо на электронную почту info@fregat.com. Однако ответ придет вам быстрее, если вы свяжетесь с сотрудниками, которые специализируются на решении конкретных вопросов, написав им на персональную почту, посмотрев на сайте Фрегат интернет контакты.
+						.contacts__item-pane.is-hidden#tab4
+							p Вы можете отправить факсы по номеру (056) 732-00-25, где работает автоматический приём.
+					
+					.contacts__map
+						.map(style="background-image: url(images/map.jpg)")
+						.map__form
+							form
+								.map__title-form У ВАС ЕСТЬ ВОПРОСЫ?
+								.form-group.form-group--flex
+									input.form-control.form-control--map.form-control--row(type="text" placeholder="Ваше имя")
+									input.form-control.form-control--map.form-control--row(type="text" placeholder="E-mail")
+								.form-group
+									textarea.form-control.form-control--map(placeholder="Сообщение")
+								.form-group.form-group--submit
+									button.map__button-form(type="submit") Отправить
+						
+		include pug/components/footer
+		include pug/components/popup

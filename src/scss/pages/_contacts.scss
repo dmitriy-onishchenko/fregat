@@ -1,0 +1,197 @@
+.contacts {
+  margin-top: -9px;
+  padding-bottom: 30px;
+
+  &__title-info {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #36454D;
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__text-info {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C3B43;
+
+    @include laptop {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__tab {
+    position: relative;
+    border-bottom: 3px solid #C4C4C4;
+    margin-top: 24px;
+
+    @include mobile {
+      border: 0;
+    }
+  }
+
+  &__list-tab {
+    display: flex;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__line-tab {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    width: 282px;
+    height: 3px;
+    background: $color-fire-brick;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__item-tab {
+    display: block;
+    margin-right: 11px;
+    padding: 15px 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #36454D;
+    transition: color 0.3s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include desktop {
+      &:hover {
+        color: $color-fire-brick;
+      }
+    }
+
+    @include laptop {
+      padding: 15px;
+    }
+
+    @include mobile {
+      border: 2px solid #C4C4C4;
+      border-bottom: 0;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 2px solid #C4C4C4;
+      }
+
+      &.is-active {
+        color: $color-fire-brick;
+        border-color: $color-fire-brick;
+
+        + .contacts__item-tab {
+          border-top-color: $color-fire-brick;
+        }
+      }
+    }
+  }
+
+  &__item-pane {
+    padding: 20px 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C3B43;
+
+    p {
+      margin: 0;
+
+      + p {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__map {
+    position: relative;
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+}
+
+.map {
+  position: relative;
+  margin-top: 45px;
+  height: 467px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+
+  &__form {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    z-index: 2;
+    padding: 39px;
+    width: 538px;
+    height: 100%;
+    box-shadow: 0px 0px 45px rgba(72, 105, 114, 0.1);
+    background: $color-white;
+
+    @include laptop {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 20px;
+    }
+  }
+
+  &__title-form {
+    margin-bottom: 28px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #36454D;
+
+    @include mobile {
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__button-form {
+    display: block;
+    width: 162px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-white;
+    background: $color-fire-brick;
+    transition: background 0.3s;
+
+    @include desktop {
+      &:hover {
+        background: $color-percian-red;
+      }
+    }
+  }
+
+  @include mobile {
+    margin-top: 20px;
+    height: 300px;
+  }
+}

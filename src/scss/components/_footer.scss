@@ -1,0 +1,195 @@
+.footer {
+  border-top: 1px solid #486972;
+
+  &__top {
+    padding-top: 23px;
+    padding-bottom: 4px;
+
+    @include laptop {
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .footer__bottom & {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__title-item {
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-charcoal;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: $color-charcoal;
+      transition: color 0.3s;
+
+      @include desktop {
+        &:hover {
+          color: $color-fire-brick;
+        }
+      }
+
+      @include mobile {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    li {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    @include desktop {
+      right: 12px;
+      top: -16px;
+    }
+
+    @include laptop {
+      position: relative;
+      right: 39px;
+    }
+  }
+
+  &__item-top {
+    position: relative;
+    right: 23px;
+
+    @include laptop {
+      right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($color-black, 0.7);
+    padding: 12px 0;
+    padding-bottom: 19px;
+  }
+
+  &__left-bottom {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  &__right-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 3px;
+    padding: 5px;
+
+    svg {
+      display: block;
+      fill: $color-black;
+      transition: fill 0.3s, stroke 0.3s;
+    }
+
+    &--facebook {
+      svg {
+        width: 8px;
+        height: 13px;
+      }
+    }
+
+    &--twitter {
+      svg {
+        width: 17px;
+        height: 13px;
+      }
+    }
+
+    &--search {
+      svg {
+        width: 15px;
+        height: 15px;
+        stroke: $color-black;
+      }
+
+      @include desktop {
+        &:hover {
+          svg {
+            stroke: $color-fire-brick;
+          }
+        }
+      }      
+    }
+
+    @include desktop {
+      &:hover {
+        svg {
+          fill: $color-fire-brick;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background: $color-white;
+  }
+}
+
+.develop {
+  a {
+    color: $color-black;
+    transition: color 0.3s;
+
+    @include desktop {
+      &:hover {
+        color: $color-fire-brick;
+      }
+    }
+  }
+}

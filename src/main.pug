@@ -1,0 +1,79 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.main-slider
+			.main-slider__carousel
+				.main-slider__item(style="background-image: url(images/home/slide.jpg)")
+					.main-slider__wrapp-item
+						.container
+							.main-slider__descr
+								.main-slider__title TP-LINK TL-WR840N
+								.main-slider__text Маршрутизатор TL-WR840N обеспечивает исключительные показатели беспроводной передачи данных, делая его идеальным для потокового просмотра видео в формате HD, а также для VoIP и онлайн-игр.
+				.main-slider__item(style="background-image: url(images/home/slide.jpg)")
+					.main-slider__wrapp-item
+						.container
+							.main-slider__descr
+								.main-slider__title TP-LINK TL-WR840N
+				.main-slider__item(style="background-image: url(images/home/slide.jpg)")
+					.main-slider__wrapp-item
+						.container
+							.main-slider__descr
+								.main-slider__title TP-LINK TL-WR840N
+								.main-slider__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias atque accusamus ab exercitationem repellat, quia, tempore ipsum harum illum dicta optio in alias magni temporibus adipisci accusantium ducimus asperiores ut!
+			.main-form
+				.main-form__wrapp
+					form(action="")
+						.main-form__title Связаться
+						.form-group
+							input.form-control(type="text" placeholder="Имя")
+						.form-group
+							input.form-control(type="text" placeholder="Телефон")
+						.form-group
+							textarea.form-control(placeholder="Сообщение")
+						.form-group.form-group--submit
+							button.main-form__submit(type="submit") Отправить
+		.catalog
+			.container.catalog__container
+				a.catalog__item(href="#")
+					.catalog__img-item
+						img(src="images/home/product1.svg" alt="")
+					.catalog__name-item TP-LINK TL-WR840N
+				a.catalog__item(href="#")
+					.catalog__img-item
+						img(src="images/home/product2.svg" alt="")
+					.catalog__name-item Маршрутизатор#[br] Xiaomi Mi WiFi Router 3
+				a.catalog__item(href="#")
+					.catalog__img-item
+						img(src="images/home/product3.svg" alt="")
+					.catalog__name-item Системы видеонаблюдения
+				a.catalog__item(href="#")
+					.catalog__img-item
+						img(src="images/home/product4.svg" alt="")
+					.catalog__name-item Обслуживание#[br] компьютерной техники
+				a.catalog__item(href="#")
+					.catalog__img-item
+						img(src="images/home/product5.svg" alt="")
+					.catalog__name-item Работы по монтажу#[br] локальных сетей
+		
+		.partners
+			.container
+				h2.partners__title Наши партнеры
+				.partners__list
+					a.partners__item(href="#" target="_blank")
+						img(src="images/home/varus.svg" alt="")
+					a.partners__item(href="#" target="_blank")
+						img(src="images/home/silpo.png" alt="")
+					a.partners__item(href="#" target="_blank")
+						img(src="images/home/varus.svg" alt="")
+					a.partners__item(href="#" target="_blank")
+						img(src="images/home/silpo.png" alt="")
+		
+		include pug/components/footer
+		include pug/components/popup

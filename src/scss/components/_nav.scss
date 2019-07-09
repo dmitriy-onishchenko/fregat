@@ -1,0 +1,38 @@
+.nav {
+  color: $color-white;
+  background: $color-big-stone;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 21px 0;
+  }
+
+  &__item {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color-white;
+    transition: color 0.3s;
+
+    @include desktop {
+      &:hover {
+        color: $color-fire-brick;
+      }
+    }
+  }
+
+  li {
+    margin-right: 44px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  @include laptop {
+    display: none;
+  }
+}

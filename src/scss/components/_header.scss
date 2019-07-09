@@ -1,0 +1,124 @@
+.header {
+  padding: 35px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__work {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+    @include laptop {
+      justify-content: center;
+      margin-top: 10px;
+
+      .footer__item-top & {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__icon-work {
+    margin-right: 12px;
+    width: 19px;
+    height: 18px;
+  }
+
+  &__text-work {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__item {
+    @include desktop {
+      &--mode {
+        position: relative;
+        right: 24px;
+        top: 7px;
+      }
+
+      &--contacts {
+        position: relative;
+        right: 11px;
+      }
+    }
+
+    @include laptop {
+      width: 50%;
+      text-align: center;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__phone {
+    margin-top: 16px;
+    width: 239px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include laptop {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    padding-top: 20px;
+  }
+}
+
+.logo {
+  position: relative;
+  right: 38px;
+  top: 3px;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @include laptop {
+    right: 0;
+    top: 0;
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}

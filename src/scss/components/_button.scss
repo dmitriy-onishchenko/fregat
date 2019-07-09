@@ -1,0 +1,45 @@
+.button {
+	&--red {
+		display: block;
+		padding: 14px 15px;
+		font-family: $font-montserrat;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		color: $color-white;
+		background: $color-fire-brick;
+		transition: background 0.3s;
+
+		&:hover {
+			background: $color-percian-red;
+		}
+
+		&:active {
+			background: $color-fire-engine-red;
+		}
+	}
+
+	&--get-call {
+		margin-top: 8px;
+		padding: 0;
+		width: 229px;
+		height: 46px;
+
+		@include laptop {
+			margin: auto;
+			margin-top: 8px;
+		}
+	}
+
+	&--submit-question {
+		width: 250px;
+		height: 60px;
+
+		@include mobile {
+			margin: auto;
+			width: 240px;
+			height: 50px;
+			font-size: 14px;
+		}
+	}
+}

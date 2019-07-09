@@ -1,0 +1,100 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				h2.page__title НАСТРОЙКА НОУТБУКА/ПК
+				.price
+					.price__top
+						.price__item
+							.price__wrapp-item
+								.price__title-item Базовый
+								.price__content-item
+									.price__line.price__line--in Обучение работе с устройством
+									.price__line.price__line--in Установка пакета программ
+									.price__line.price__line--in Создание диска для восстановления ОС
+									.price__line.price__line--in Повышение быстродействия ПК
+									.price__line.price__line--disable Установка лицензионного антивируса
+									.price__line.price__line--disable Создание облачного хранилища
+									.price__line.price__line--disable Установка операционной системы
+									.price__line.price__line--disable Круглосуточная онлайн поддержка (3 месяца)
+								.price__bottom-item
+									.price__value-item 399 грн
+									a.price__order-button(href="#") Заказать
+						.price__item.price__item--center
+							.price__wrapp-item
+								.price__title-item Стандарт
+								.price__content-item
+									.price__line.price__line--in Обучение работе с устройством
+									.price__line.price__line--in Установка пакета программ
+									.price__line.price__line--in Создание диска для восстановления ОС
+									.price__line.price__line--in Повышение быстродействия ПК
+									.price__line.price__line--disable Установка лицензионного антивируса
+									.price__line.price__line--disable Создание облачного хранилища
+									.price__line.price__line--disable Установка операционной системы
+									.price__line.price__line--disable Круглосуточная онлайн поддержка (3 месяца)
+								.price__bottom-item
+									.price__value-item 599 грн
+									a.price__order-button(href="#") Заказать
+						.price__item
+							.price__wrapp-item
+								.price__title-item Максимум
+								.price__content-item
+									.price__line.price__line--in Обучение работе с устройством
+									.price__line.price__line--in Установка пакета программ
+									.price__line.price__line--in Создание диска для восстановления ОС
+									.price__line.price__line--in Повышение быстродействия ПК
+									.price__line.price__line--disable Установка лицензионного антивируса
+									.price__line.price__line--disable Создание облачного хранилища
+									.price__line.price__line--disable Установка операционной системы
+									.price__line.price__line--disable Круглосуточная онлайн поддержка (3 месяца)
+								.price__bottom-item
+									.price__value-item 799 грн
+									a.price__order-button(href="#") Заказать
+					.price__bottom
+						h2.page__title ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
+						.price__list
+							.price__item-list
+								.price__left-list
+									.price__title-list Антивирусная помощь
+									.price__text-list Установка антивируса (дистрибутив предоставляет Клиент), очистка ОС от вирусов, обучение пользованию ПО
+								.price__right-list
+									.price__value-list 299 грн
+									a.price__button-list(href="#") Заказать
+							.price__item-list
+								.price__left-list
+									.price__title-list Установка и обновление ОС
+									.price__text-list Установка ОС, драйверов, разбивка жесткого диска. Дистрибутив ОС предоставляет Клиент.
+								.price__right-list
+									.price__value-list 399 грн
+									a.price__button-list(href="#") Заказать
+							.price__item-list
+								.price__left-list
+									.price__title-list Повышение быстродействия ПК
+									.price__text-list Оптимизация работы жесткого диска, оперативной памяти, автозагрузки, отключение неиспользуемых сервисов, создание точки восстановления ОС
+								.price__right-list
+									.price__value-list 299 грн
+									a.price__button-list(href="#") Заказать
+							.price__item-list
+								.price__left-list
+									.price__title-list Чистка системы охлаждения ПК/ноутбука/Macbook
+									.price__text-list Разборка компьютера, чистка системы охлаждения от пыли, замена термопасты
+								.price__right-list
+									.price__value-list 399 / 499 / 599 грн.
+									a.price__button-list(href="#") Заказать
+							.price__item-list
+								.price__left-list
+									.price__title-list Диагностика ПК/ноутбука
+									.price__text-list Анализ общего состояние ПК с целью обнаружения неисправностей (скорость загрузки, быстродействие основных узлов и пр.)
+								.price__right-list
+									.price__value-list 99 грн
+									a.price__button-list(href="#") Заказать
+		include pug/components/footer
+		include pug/components/popup

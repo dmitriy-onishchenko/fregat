@@ -1,0 +1,459 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				h2.page__title TP-LINK TL-WR840N
+				.product
+					.product-card
+						.product-card__tab
+							button.product-card__item-tab.is-active(type="button" data-tab="#tab-1") Вся информация
+							button.product-card__item-tab(type="button" data-tab="#tab-2") Характеристики
+							button.product-card__item-tab(type="button" data-tab="#tab-3") Поддержка
+							button.product-card__item-tab(type="button" data-tab="#tab-4") Вопрос-ответ
+						.product-card__content
+							.product-card__pane#tab-1
+								.product-card__info
+									.product-card__carousel
+										.product-thumb
+											.product-thumb__slider
+												.product-thumb__item
+													a.thumbnail(href="https://via.placeholder.com/3500x3500" data-fancybox="gallery")
+														img(src="https://via.placeholder.com/130x130" alt="")
+												.product-thumb__item
+													a.thumbnail(href="https://via.placeholder.com/3000x3000" data-fancybox="gallery")
+														img(src="https://via.placeholder.com/130x130" alt="")
+												.product-thumb__item
+													a.thumbnail(href="https://via.placeholder.com/500x500" data-fancybox="gallery")
+														img(src="https://via.placeholder.com/130x130" alt="")
+												.product-thumb__item
+													a.thumbnail(href="https://via.placeholder.com/1500x1500" data-fancybox="gallery")
+														img(src="https://via.placeholder.com/130x130" alt="")
+												.product-thumb__item
+													a.thumbnail(href="https://via.placeholder.com/2000x2000" data-fancybox="gallery")
+														img(src="https://via.placeholder.com/130x130" alt="")
+										.product-img-container
+											a.product-img-container__launcher(href="https://via.placeholder.com/3500x3500")
+												img(src="https://via.placeholder.com/345x345" alt="")
+
+									.product-card__descr-info
+										.product-card__code Код товара: #[span 30810]
+										.product-name TP-LINK TL-WR840N
+										.product-descr
+											.product-descr__item Тип корпуса: цилиндрическая (bullet)
+											.product-descr__item Тип камеры: сетевая IP
+											.product-descr__item Количество мегапикселей: 5
+											.product-descr__item Применение: для улицы и помещений
+											.product-descr__item Особенности: питание по витой паре (PoE), слот для карты памяти, защита от влаги и пыли
+										.product-status
+											.product-status__title
+												.product-status__top-title Количество:
+												.product-status__bottom-title Нет на складе
+											.product-count
+												button.product-count__btn.product-count__btn--down(type="button") -
+												input.product-count__field(type="text" value="1")
+												button.product-count__btn.product-count__btn--up(type="button") +
+											.product-status__equally =
+											.product-status__info
+												.product-status__name-info Оптовая цена
+												.product-status__value
+													.product-status__price-value 5948
+													.product-status__price-currency &#8381
+										.product-card__button
+											a.button.button--red.product-card__item-button(href="#") Добавить в корзину
+									
+									.product-card__option
+										.row
+											.col-lg-7
+												.row
+													.col-lg-6
+														.product-card__item-option
+															.product-card__img-option
+																img(src="images/icons/option1.svg" alt="")
+															.product-card__info-option
+																.product-card__title-option Доставка
+																.product-card__text-option Самовывоз со склада в Москве (метро Кантемировская)
+													.col-lg-6
+														.product-card__item-option
+															.product-card__img-option
+																img(src="images/icons/option1.svg" alt="")
+															.product-card__info-option
+																.product-card__title-option Доставка
+																.product-card__text-option Отправка в регионы ТК Байкал Сервис, Деловые Линии
+											.col-lg-5
+												.product-card__item-option
+													.product-card__img-option
+														img(src="images/icons/option2.svg" alt="")
+													.product-card__info-option
+														.product-card__title-option Доставка
+														.product-card__text-option Бесплатная доставка заказов на сумму свыше 30 000 рублей осуществляется по Москве в пределах МКАД до склада или до любой транспортной компании, указанной заказчиком
+											
+											.col-lg-7
+												.row
+													.product-card__item-option.col-lg-6
+														.product-card__img-option
+															img(src="images/icons/option3.svg" alt="")
+														.product-card__info-option
+															.product-card__title-option Оплата
+															.product-card__text-option Мы работаем только с юридическими лицами и ИП
+													.product-card__item-option.col-lg-6
+														.product-card__img-option
+															img(src="images/icons/option4.svg" alt="")
+														.product-card__info-option
+															.product-card__title-option Оплата
+															.product-card__text-option Оплата заказов производится по безналичному расчету
+											.col-lg-5
+												.row
+													.product-card__item-option.col-lg-7
+														.product-card__img-option
+															img(src="images/icons/option5.svg" alt="")
+														.product-card__info-option
+															.product-card__title-option Оплата
+															.product-card__text-option Минимальная сумма размещаемого заказа - 10 000 рублей
+													.product-card__item-option.col-lg-5
+														.product-card__img-option
+															img(src="images/icons/option6.svg" alt="")
+														.product-card__info-option
+															.product-card__title-option Гарантия
+															.product-card__text-option 12 месяцев
+								.product-description
+									.row.offset-large.product-description__grid
+										.col-lg-6.outer-large
+											.product-description__item
+												.product-description__title Общая информация
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+											
+											.product-description__item
+												.product-description__title Заголовок
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+											
+											.product-description__item
+												.product-description__title Заголовок
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+										.col-lg-6.outer-large
+											.product-description__item
+												.product-description__title Общая информация
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+											.product-description__item
+												.product-description__title Общая информация
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+											.product-description__item
+												.product-description__title Общая информация
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+											.product-description__item
+												.product-description__title Общая информация
+												.product-description__content-item.product-description__content-item--shadow
+													.product-description__table
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+														.product-description__line
+															.product-description__name Название
+															.product-description__value
+																.product-description__item-value Значение
+										.col-lg-12.outer-large
+											.product-description__item
+												.product-description__title Заголовок
+												.product-description__content-item.product-description__content-item--shadow
+													.row.offset-large
+														.col-lg-6.outer-large
+															.product-description__table
+																.product-description__line
+																	.product-description__name Название
+																	.product-description__value
+																		.product-description__item-value Значение
+																.product-description__line
+																	.product-description__name Название
+																	.product-description__value
+																		.product-description__item-value Значение
+
+														.col-lg-6.outer-large
+															.product-description__table
+																.product-description__line
+																	.product-description__name Название
+																	.product-description__value
+																		.product-description__item-value Значение
+																.product-description__line
+																	.product-description__name Название
+																	.product-description__value
+																		.product-description__item-value Значение
+							.product-card__pane.is-hidden#tab-2
+								.product-card__info
+									include pug/components/product-mini-block
+									.product-description
+										.row.offset-large.product-description__grid
+											.col-lg-6.outer-large
+												.product-description__item
+													.product-description__title Общая информация
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+												
+												.product-description__item
+													.product-description__title Заголовок
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+												
+												.product-description__item
+													.product-description__title Заголовок
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+											.col-lg-6.outer-large
+												.product-description__item
+													.product-description__title Общая информация
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+												.product-description__item
+													.product-description__title Общая информация
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+												.product-description__item
+													.product-description__title Общая информация
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+												.product-description__item
+													.product-description__title Общая информация
+													.product-description__content-item
+														.product-description__table
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+															.product-description__line
+																.product-description__name Название
+																.product-description__value
+																	.product-description__item-value Значение
+											.col-lg-12.outer-large
+												.product-description__item
+													.product-description__title Заголовок
+													.product-description__content-item
+														.row.offset-large
+															.col-lg-6.outer-large
+																.product-description__table
+																	.product-description__line
+																		.product-description__name Название
+																		.product-description__value
+																			.product-description__item-value Значение
+																	.product-description__line
+																		.product-description__name Название
+																		.product-description__value
+																			.product-description__item-value Значение
+
+															.col-lg-6.outer-large
+																.product-description__table
+																	.product-description__line
+																		.product-description__name Название
+																		.product-description__value
+																			.product-description__item-value Значение
+																	.product-description__line
+																		.product-description__name Название
+																		.product-description__value
+																			.product-description__item-value Значение
+							.product-card__pane.is-hidden#tab-3
+								.product-card__info
+									include pug/components/product-mini-block
+									.product-card__support
+										.row
+											.col-lg-6.product-card__item-support
+												a.product-card__block-support(href="#")
+													.product-card__icon-support
+														img(src="images/icons/user_manual.png" alt="")
+													.product-card__descr-support
+														.product-card__title-support Инструкция
+														.product-card__text-support Руководство пользователя
+											.col-lg-6.product-card__item-support
+												a.product-card__block-support(href="#")
+													.product-card__icon-support
+														img(src="images/icons/international-connection.png" alt="")
+													.product-card__descr-support
+														.product-card__title-support Софт
+														.product-card__text-support Программное обеспечение
+							.product-card__pane.is-hidden#tab-4
+								.product-card__info
+									include pug/components/product-mini-block
+									.product-card__question
+										.product-card__header-question
+											.product-card__title-question Часто задаваемые вопросы
+											.product-card__count-question
+												.product-card__title-count-question Вопросы
+												.product-card__total-count-question 0
+										.product-card__content-question
+											.product-card__title-question Задать вопрос
+											form
+												.form-group
+													textarea.form-control.form-control--question.form-control--question-text(type="text" placeholder="Ваш вопрос")
+												.form-group.form-group--submit-question
+													input.form-control.form-control--question.form-control--question-input(type="text" placeholder="Как к вам обращаться?")
+													button.button.button--red.button--submit-question(type="submit") Отправить вопрос
+
+		include pug/components/footer
+		include pug/components/popup

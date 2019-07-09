@@ -1,0 +1,35 @@
+extends pug/base
+
+append vars
+	//- ...
+
+block content
+	.site-container
+		include pug/components/nav
+		include pug/components/header
+		include pug/components/menu
+		.page
+			.container
+				h1.page__title Отзывы
+				.review
+					.review__item
+						.review__img(style="background-image: url(images/post01.jpg)")
+						.review__descr
+							.review__name МАРЬЯНА ГЕЛЛЕР
+							.review__city г.Днепр
+							.review__text Огромнейшее спасибо за оказанную помощь в решении сразу нескольких проблем!!! Если честно,вообще не ожидал,что так вообще бывает!!! Обязательно расскажу всем друзьям!!!
+					.review__item
+						.review__img(style="background-image: url(images/post01.jpg)")
+						.review__descr
+							.review__name МАРЬЯНА ГЕЛЛЕР
+							.review__city г.Днепр
+							.review__text Огромнейшее спасибо за оказанную помощь в решении сразу нескольких проблем!!! Если честно,вообще не ожидал,что так вообще бывает!!! Обязательно расскажу всем друзьям!!!
+					.review__item
+						.review__img(style="background-image: url(images/post01.jpg)")
+						.review__descr
+							.review__name МАРЬЯНА ГЕЛЛЕР
+							.review__city г.Днепр
+							.review__text Огромнейшее спасибо за оказанную помощь в решении сразу нескольких проблем!!! Если честно,вообще не ожидал,что так вообще бывает!!! Обязательно расскажу всем друзьям!!!
+
+		include pug/components/footer
+		include pug/components/popup

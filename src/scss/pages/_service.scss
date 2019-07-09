@@ -1,0 +1,146 @@
+.service {
+  margin-top: -9px;
+  padding-bottom: 28px;
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 430px;
+
+    &:first-child {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 89px;
+        left: 50%;
+        width: 334px;
+        height: 43px;
+        background: url("../images/icons/serv-line2.svg") no-repeat;
+        background-size: contain;
+        transform: translateX(30%);
+
+        @media (max-width: 1650px) {
+          width: 224px;
+          height: 37px;
+          transform: translateX(39%);
+        }
+
+        @include laptop {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 334px;
+        height: 43px;
+        background: url("../images/icons/serv-line1.svg") no-repeat;
+        background-size: contain;
+        transform: translateX(30%);
+
+        @media (max-width: 1650px) {
+          width: 224px;
+          height: 37px;
+          transform: translateX(39%);
+        }
+
+        @include laptop {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 1650px) {
+      width: 330px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+      width: 100%;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon-item {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #36454D;
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__text-item {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__info {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-black;
+    transition: color 0.3s;
+
+    a {
+      color: $color-fire-brick;
+
+      @include desktop {
+        &:hover {
+          color: $color-percian-red;
+        }
+      }
+    }
+
+    @include mobile {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 0;
+  }
+}

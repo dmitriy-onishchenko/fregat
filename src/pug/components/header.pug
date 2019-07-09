@@ -1,0 +1,22 @@
+header.header
+	.container.header__container
+		a.logo(href="#")
+			img(src="images/logo.svg" alt="")
+		.header__item.header__item--mode
+			.header__title-item Режим работы
+			.header__work
+				.header__icon-work.svg-icon
+					+svg('time')
+				.header__text-work 24/7/365
+		.header__item.header__item--contacts
+			.header__title-item Контакты
+			.header__phone
+				.dropdown-phone
+					.dropdown-phone__active (056) 732-00-90
+					.dropdown-phone__hidden.is-hidden
+						button.dropdown-phone__number(type="button") (056) 732-00-90
+						button.dropdown-phone__number(type="button") Номер 2
+						button.dropdown-phone__number(type="button") Номер 3
+		.header__item
+			.header__title-item Мы Вам перезвоним
+			button.button.button--get-call.button--red.js-popup-button(type="button" data-modal="#get-call") Заказать обратный звонок
